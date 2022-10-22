@@ -61,10 +61,7 @@ h1 {
     position: relative;
     display: flex;
     justify-content: space-around;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
     border-top: 5px solid #FF0080;
     border-bottom: 5px solid #FF0080;
     margin-right: auto;
@@ -136,7 +133,7 @@ h2 {
     color: white;
     text-align: center;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 500;
     font-family: "Jost";
 }
 .projectsborder {
@@ -319,4 +316,84 @@ h4 {
 .sacramento {
     font-family: "Sacramento";
     font-size: 2.5rem;
+}
+.oraimg:hover {
+    box-shadow: 6px 6px #037c6e;
+}
+.seiimg:hover {
+    box-shadow: 6px 6px #037c6e;
+}
+.teaimg:hover {
+    box-shadow: 6px 6px #037c6e;
+}
+.styleimg:hover {
+    box-shadow: 6px 6px #037c6e;
+}
+.cheatimg:hover {
+    box-shadow: 6px 6px #037c6e;
+}
+.mixedimg:hover {
+    box-shadow: 6px 6px #037c6e;
+}
+.guessimg:hover {
+    box-shadow: 6px 6px #037c6e;
+}
+/* phone users */
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 8px;
+    }
+    .opening {
+        background-position: center;
+    }
+    .aboutmeimage img {
+        display: none;
+    }
+    .projectsborder {
+        display: grid;
+        width: 50%;
+        grid-template-rows: repeat(7, 120px);
+        grid-template-columns: repeat(2, 120px);
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        row-gap: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 3rem;
+        border-bottom: 6px dashed black;
+
+    }
+    .h1 {
+        position: relative;
+        top: 10%;
+    }
+    .aboutmeparagraph  {
+        width: 80%;
+        text-align: center;
+    }
+    .start {
+        width: 6%;
+    }
+    .end {
+        width: 6%;
+    }
+    #start {
+        width: 10%;
+        border-right: 6px dashed black;
+    }
+    #end {
+        width: 10%;
+        border-left: 6px dashed black;
+    }
+    #pro {
+        font-weight: 600;
+    }
+    h4 {
+        font-size: 2rem;
+    }
+    .sacramento {
+        font-size: 3.5rem;
+    }
 }
